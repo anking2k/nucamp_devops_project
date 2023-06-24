@@ -1,7 +1,4 @@
-# nucamp_devops_project
-
-Portfolio Project Report - Week 1
-Project: Basketball Team and Player Management Application
+# Project: Basketball Team and Player Management Application
 
 **Features:**
 The basketball team and player management application will offer the following features:
