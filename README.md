@@ -1,83 +1,78 @@
-# Project: Basketball Team and Player Management Application
+# Users and Cookies Management Application
+The Users and Cookies Management Application is a web-based application that allows users to manage user information and cookies. It provides features for creating users, retrieving user information, updating user details, and deleting users. Additionally, it allows users to create cookies, retrieve cookie information, update cookie details, and delete cookies. The application is built using Flask, a Python web framework, and utilizes a PostgreSQL database for data storage.
 
-**Features:**
-The basketball team and player management application will offer the following features:
+**Features**
+The Users and Cookies Management Application offers the following features:
 
-a) Team Management:
-Create a new basketball team.
-Retrieve a specific basketball team.
-Update the information of a basketball team.
-Delete a basketball team.
+**User Management:** Users can create a new user, retrieve information about a specific user, update user details, and delete users.
+**Cookie Management:** Users can create a new cookie, retrieve information about a specific cookie, update cookie details, and delete cookies.
+**API Endpoints**
+The application provides the following API endpoints:
 
-b) Player Management:
-Add a new player to a basketball team.
-Retrieve a specific player.
-Update the information of a player.
-Delete a player.
-
-**API Endpoints:**
-a) Team Management Endpoints:
-Create a new basketball team:
+**User Management Endpoints**
+Create a new user:
 
 **HTTP Verb: POST**
-Endpoint URL: /teams/
-Special Details: Request body should contain the team's information (team name, coach name).
-Retrieve a specific basketball team:
+Endpoint URL: /users/
+Special Details: The request body should contain the user's information (username, email).
+Retrieve a specific user:
 
 **HTTP Verb: GET**
-Endpoint URL: /teams/{team_id}/
-Special Details: The team_id parameter represents the unique identifier of the basketball team.
-Update the information of a basketball team:
+Endpoint URL: /users/{user_id}/
+Special Details: The user_id parameter represents the unique identifier of the user.
+Update the information of a user:
 
 **HTTP Verb: PUT/PATCH**
-Endpoint URL: /teams/{team_id}/
-Special Details: The team_id parameter represents the unique identifier of the basketball team. The request body should contain the updated team information.
-Delete a basketball team:
+Endpoint URL: /users/{user_id}/
+Special Details: The user_id parameter represents the unique identifier of the user. The request body should contain the updated user information.
+Delete a user:
 
 **HTTP Verb: DELETE**
-Endpoint URL: /teams/{team_id}/
-Special Details: The team_id parameter represents the unique identifier of the basketball team.
-b) Player Management Endpoints:
-
-Add a new player to a basketball team:
+Endpoint URL: /users/{user_id}/
+Special Details: The user_id parameter represents the unique identifier of the user.
+Cookie Management Endpoints
+Create a new cookie:
 
 **HTTP Verb: POST**
-Endpoint URL: /teams/{team_id}/players/
-Special Details: The team_id parameter represents the unique identifier of the basketball team. The request body should contain the player's information (player name, position, height, weight).
-Retrieve a specific player:
+Endpoint URL: /cookies/
+Special Details: The request body should contain the cookie's information (flavor).
+Retrieve a specific cookie:
 
 **HTTP Verb: GET**
-Endpoint URL: /players/{player_id}/
-Special Details: The player_id parameter represents the unique identifier of the player.
-Update the information of a player:
+Endpoint URL: /cookies/{cookie_id}/
+Special Details: The cookie_id parameter represents the unique identifier of the cookie.
+Update the information of a cookie:
 
 **HTTP Verb: PUT/PATCH**
-Endpoint URL: /players/{player_id}/
-Special Details: The player_id parameter represents the unique identifier of the player. The request body should contain the updated player information.
-Delete a player:
+Endpoint URL: /cookies/{cookie_id}/
+Special Details: The cookie_id parameter represents the unique identifier of the cookie. The request body should contain the updated cookie information.
+Delete a cookie:
 
 **HTTP Verb: DELETE**
-Endpoint URL: /players/{player_id}/
-Special Details: The player_id parameter represents the unique identifier of the player.
-Database Tables:
-Database Name: basketball_app_db
+Endpoint URL: /cookies/{cookie_id}/
+Special Details: The cookie_id parameter represents the unique identifier of the cookie.
+Database Tables
+The application utilizes a PostgreSQL database for data storage and consists of the following tables:
 
-**Table: Team**
+**Users**
 Columns:
 id (Primary Key, Integer)
-team_name (String)
-coach_name (String)
-
-**Table: Player**
+username (String, Unique)
+email (String, Unique)
+Cookies
 Columns:
 id (Primary Key, Integer)
-team_id (Foreign Key referencing Team.id)
-player_name (String)
-position (String)
-height (Float)
-weight (Float)
+flavor (String)
+**Getting Started**
+To run the Users and Cookies Management Application locally, follow these steps:
 
-**Constraints:**
-Team.id: Primary Key constraint.
-Player.id: Primary Key constraint.
-Player.team_id: Foreign Key constraint referencing Team.id.
+Install the necessary dependencies specified in the requirements.txt file.
+Set up a PostgreSQL database and update the database connection details in the application configuration.
+Run the application using the appropriate command (e.g., python app.py).
+Access the application using the provided API endpoints and test its functionality.
+**Contributors**
+Andre' King
+**License**
+This project is licensed under the MIT License.
+
+Feel free to customize the README file as per your project's requirements.
