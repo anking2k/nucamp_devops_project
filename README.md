@@ -1,8 +1,8 @@
-# Users and Cookies Management Application
-The Users and Cookies Management Application is a web-based application that allows users to manage user information and cookies. It provides features for creating users, retrieving user information, updating user details, and deleting users. Additionally, it allows users to create cookies, retrieve cookie information, update cookie details, and delete cookies. The application is built using Flask, a Python web framework, and utilizes a PostgreSQL database for data storage.
+# Cookies Management Application
+The Cookies Management Application is a web-based application that allows users to manage user information and gather details on their favorite cookie. The fictional use-case is for a bakery that desires to stay on top of favorite cookie flavors from their user's database so that they can continually stay informed on what "new flavors" may be a hit at the bakery. It provides features for creating users, retrieving user information, updating user details, and deleting users. Additionally, it allows users to create cookies, retrieve cookie information, update cookie details, and delete cookies. The application is built using Flask, a Python web framework, and utilizes a PostgreSQL database for data storage.
 
 **Features**
-The Users and Cookies Management Application offers the following features:
+The Cookies Management Application offers the following features:
 
 **User Management:** Users can create a new user, retrieve information about a specific user, update user details, and delete users.
 **Cookie Management:** Users can create a new cookie, retrieve information about a specific cookie, update cookie details, and delete cookies.
@@ -59,20 +59,22 @@ Columns:
 id (Primary Key, Integer)
 username (String, Unique)
 email (String, Unique)
-Cookies
+
+**Cookies**
 Columns:
 id (Primary Key, Integer)
 flavor (String)
+
 **Getting Started**
 To run the Users and Cookies Management Application locally, follow these steps:
 
-Install the necessary dependencies specified in the requirements.txt file.
-Set up a PostgreSQL database and update the database connection details in the application configuration.
-Run the application using the appropriate command (e.g., python app.py).
-Access the application using the provided API endpoints and test its functionality.
+- Install the necessary dependencies specified in the requirements.txt file.
+- Set up a PostgreSQL database and update the database connection details in the application configuration.
+- Run the application using the appropriate command (e.g., python app.py).
+- Access the application using the provided API endpoints and test its functionality.
+
 **Contributors**
 Andre' King
-**License**
-This project is licensed under the MIT License.
 
-Feel free to customize the README file as per your project's requirements.
+**License**
+This project is licensed under the MIT License. Feel free to customize the README file as per your project's requirements.
