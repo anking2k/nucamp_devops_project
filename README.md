@@ -73,8 +73,8 @@ To run the Users and Cookies Management Application locally, follow these steps:
 - Run the application using the appropriate command (e.g., python app.py).
 - Access the application using the provided API endpoints and test its functionality.
 
-**Contributors**
+**Contributors:**
 Andre' King
 
-**License**
+**License:**
 This project is licensed under the MIT License. Feel free to customize the README file as per your project's requirements.
